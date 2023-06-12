@@ -1,18 +1,18 @@
 export const items = [
     {
         id: 1,
-        name:'catalogue'
+        name: 'Catalogue'
     },
     {
         id: 2,
-        name:'fashion'
+        name: 'Fashion'
     },
     {
         id: 3,
-        name:'favourite'
+        name: 'Favourite'
     },
     {
         id: 4,
-        name:'lifestyle'
+        name: 'Lifestyle'
     }
 ]

@@ -1,16 +1,24 @@
-import HeaderNavBar from "./HeaderNavBar.jsx";
+import HeaderNavBar from "./HeaderNavBar/HeaderNavBar";
+import HeaderBanner from "./HeaderBanner/HeaderBanner";
+import {items} from "../../../data/HeaderNavBar/header-nav.data.js";
 import style from './Header.module.scss'
-import {items} from "../../../data/header-nav.data.js";
 
-const Header = () =>{
+
+const Header = () => {
     return (
         <div className="main-container">
-            <img src="public/logo/fashion-logo.png" alt="fashion-logo"/>
-            <div className={style.nav}>
-                {items.map(item =>(
-            <HeaderNavBar key={item.id} item={item}/>
-                ))}
+            <div className={style.header_wrap}>
+                <a href={'index.html'} className={style.logo}></a>
+                <div className={style.nav_button}>
+                    <ul className={style.list}>
+                        {items.map(item => (
+                            <HeaderNavBar key={item.id} item={item}/>
+                        ))}
+                    </ul>
+                    <button className='main-btn'>Sign Up</button>
+                </div>
             </div>
+            <HeaderBanner/>
         </div>
     )
 }
