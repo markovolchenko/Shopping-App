@@ -1,5 +1,10 @@
 @import "styles/variablies.scss";
+@import "styles/mixins.scss";
 
-.swiper_wrap {
-  background-color: $yellow;
+.title_wrap {
+  display: flex;
+}
+
+.title {
+  @include main-title
 }

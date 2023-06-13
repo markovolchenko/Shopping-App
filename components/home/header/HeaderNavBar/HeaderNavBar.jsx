@@ -1,10 +1,15 @@
 import styles from '../Header.module.scss'
+import {items} from "../../../../data/HeaderNavBar/header-nav.data.js";
 
-const HeaderNavBar = ({item}) => {
+const HeaderNavBar = () => {
     return (
-        <li className={styles.item}>
-            <a className={styles.link} href="#">{item.name}</a>
-        </li>
+        <>
+            {items.map(item => (
+                <li key={item.id} className={styles.item}>
+                    <a className={styles.link} href="#">{item.name}</a>
+                </li>
+            ))}
+        </>
     )
 }
 export default HeaderNavBar

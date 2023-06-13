@@ -1,9 +1,5 @@
 @import "variablies";
-
-#root {
-  display: flex;
-  justify-content: center;
-}
+@import "mixins";
 
 html {
   font-size: 62.5%;
@@ -40,6 +36,35 @@ button {
 }
 
 .main-container {
-  max-width: 188rem;
-  margin: 2rem 10rem;
+  width: 100%;
+  max-width: 171rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem
+}
+
+.swiper-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.swiper-pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 6rem;
+  gap: 1rem;
+}
+
+.swiper-pagination-bullet {
+  display: block;
+  width: 1rem;
+  height: 1rem;
+  background-color: $gray;
+  border-radius: 50%;
+  cursor: pointer;
+
+  &-active {
+    background-color: $yellow;
+  }
 }

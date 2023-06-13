@@ -12,6 +12,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-top: 3rem;
 }
 
 .list {
@@ -50,7 +51,7 @@
   position: relative;
   overflow: hidden;
   padding: 7rem 9rem;
-  margin-top: 3rem;
+  margin-top: 10rem;
   background: $light-gray;
   border-radius: 6rem;
   gap: 10rem;

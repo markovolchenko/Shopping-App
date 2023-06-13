@@ -1,0 +1,20 @@
+@mixin main-title {
+  display: block;
+  position: relative;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 4.8rem;
+  line-height: 5rem;
+  letter-spacing: 0.06em;
+  color: $black;
+  margin: 10rem 0;
+  z-index: 2;
+  &:after {
+    content: url("public/logo/decoration-element.png");
+    position: absolute;
+    right: 0;
+    top: 2rem;
+    z-index: -1;
+  }
+}

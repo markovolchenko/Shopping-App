@@ -1,0 +1,36 @@
+@import "styles/variablies.scss";
+
+.container {
+  padding-top: 2rem;
+}
+
+.box {
+  max-width: 48.4rem;
+  height: auto;
+  transition: .3s;
+
+  &:hover {
+    transform: translatey(-1rem);
+  }
+}
+
+.name {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 3.2rem;
+  line-height: 5rem;
+  letter-spacing: -0.04em;
+  color: $black;
+  margin-top: 2rem;
+}
+
+.link {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 2.4rem;
+  letter-spacing: -0.04em;
+  text-decoration: none;
+  color: $gray;
+}

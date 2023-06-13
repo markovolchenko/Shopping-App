@@ -1,9 +1,14 @@
 import BrandSlider from "./BrandSlider/BrandSlider.jsx";
-import styles from './Main.module.scss'
+import Title from "./Title/Title.jsx";
+import NewArrivalsSlider from "./NewArrivalsSlider/NewArrivalsSlider.jsx";
 
 const Main = () => {
     return (
-        <BrandSlider/>
+        <>
+            <BrandSlider/>
+            <Title/>
+            <NewArrivalsSlider/>
+        </>
     )
 }
 

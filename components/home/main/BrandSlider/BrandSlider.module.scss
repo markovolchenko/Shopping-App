@@ -1,0 +1,17 @@
+@import "styles/variablies.scss";
+
+.wrap {
+  margin-top: 10rem;
+  padding: 5rem 0;
+  background-color: $yellow;
+}
+
+.slide {
+  display: flex;
+  justify-content: center;
+  width: 30rem;
+}
+
+.brand {
+  max-width: 15rem;
+}
