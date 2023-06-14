@@ -15,7 +15,12 @@ const NewArrivalsSlider = () => {
                                 <div className={style.box}>
                                     <img src={item.image} alt="image"/>
                                 </div>
-                                <h1 className={style.name}>{item.name}</h1>
+                                <div className={style.arrow_box}>
+                                    <h1 className={style.name}>{item.name}</h1>
+                                    <a href="#">
+                                        <img src="public/logo/arrow.svg" alt="image" className={style.arrow}/>
+                                    </a>
+                                </div>
                                 <a href='#' className={style.link}>Explore Now</a>
                             </div>
                         </SwiperSlide>

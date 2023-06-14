@@ -20,3 +20,7 @@ export const titles = [
         class: 'text'
     },
 ]
+export const subtitle
+    = {
+    text: 'Live for Influential and Innovative fashion!',
+}

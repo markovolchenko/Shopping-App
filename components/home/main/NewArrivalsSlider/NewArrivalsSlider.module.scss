@@ -1,6 +1,9 @@
 @import "styles/variablies.scss";
 
 .container {
+  display: flex;
+  flex-direction: column;
+  max-width: 48.4rem;
   padding-top: 2rem;
 }
 
@@ -33,4 +36,25 @@
   letter-spacing: -0.04em;
   text-decoration: none;
   color: $gray;
+  transition: .3s;
+
+  &:hover {
+    opacity: .8;
+  }
+}
+
+.arrow_box {
+  position: relative;
+}
+
+.arrow {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  transition: .3s;
+
+  &:hover {
+    transform: translateX(.5rem);
+    opacity: .8;
+  }
 }

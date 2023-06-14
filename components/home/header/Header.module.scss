@@ -124,3 +124,30 @@
   width: 100%;
   height: auto;
 }
+
+.star {
+  & img {
+    &:nth-child(1) {
+      position: absolute;
+      right: 45rem;
+    }
+
+    &:nth-child(2) {
+      position: absolute;
+      top: 65rem;
+      right: 25rem;
+    }
+
+    &:nth-child(3) {
+      position: absolute;
+      bottom: 5rem;
+      right: 95rem;
+    }
+
+    &:nth-child(4) {
+      position: absolute;
+      top: 5rem;
+      right: 95rem;
+    }
+  }
+}

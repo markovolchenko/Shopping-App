@@ -1,5 +1,5 @@
 import HeaderNavBar from "./HeaderNavBar/HeaderNavBar";
-import HeaderBanner from "./HeaderBanner/HeaderBanner";
+import HeaderBanner from "./HeaderBanner/HeaderBanner.jsx";
 import style from './Header.module.scss'
 
 
