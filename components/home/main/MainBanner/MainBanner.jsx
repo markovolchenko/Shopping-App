@@ -1,7 +1,7 @@
 import style from './MainBanner.module.scss'
 import {titles, subtitles} from "../../../../data/MainBanner/main-banner.data.js";
 import BgIcons from "../../BgIcons/BgIcons.jsx";
-import {grayStars} from "../../../../data/bgIcons/bg-icons.data.js";
+import {whiteStars} from "../../../../data/bgIcons/bg-icons.data.js";
 
 
 const MainBanner = () => {
@@ -28,7 +28,7 @@ const MainBanner = () => {
                 </div>
             </div>
             <div className={style.star}>
-                <BgIcons icons={grayStars}/>
+                <BgIcons stars={whiteStars}/>
             </div>
         </div>
     )

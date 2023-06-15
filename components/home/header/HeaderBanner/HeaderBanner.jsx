@@ -1,6 +1,8 @@
 import style from "../Header.module.scss";
 import {titles, subtitle} from '../../../../data/HeaderBanner/header-banner.data.js'
 import BgIcons from "../../BgIcons/BgIcons.jsx";
+import {grayStars} from "../../../../data/bgIcons/bg-icons.data.js";
+import React from "react";
 
 
 const HeaderBanner = () => {
@@ -10,9 +12,9 @@ const HeaderBanner = () => {
             <div className={style.col}>
                 <div className={style.title}>
                     {titles.map(title => (
-                        <>
-                            <h1 key={title.id} className={style.text}>{title.text}</h1>
-                        </>
+                        <React.Fragment key={title.id}>
+                            <h1 className={style.text}>{title.text}</h1>
+                        </React.Fragment>
                     ))}
                 </div>
 
@@ -29,7 +31,7 @@ const HeaderBanner = () => {
                 </div>
             </div>
             <div className={style.star}>
-                <BgIcons/>
+                <BgIcons stars={grayStars}/>
             </div>
         </div>
 

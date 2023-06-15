@@ -1,14 +1,18 @@
-import {grayStars} from "../../../data/bgIcons/bg-icons.data.js";
+import {oneOfType, string, number} from 'prop-types'
 
 
-const BgIcons = () => {
+const BgIcons = ({stars}) => {
     return (
         <>
-            {grayStars.map(item => (
+            {stars.map(item => (
                 <img key={item.id} src={item.icon} alt="star"/>
             ))}
         </>
     )
 }
+
+BgIcons.propTypes = {
+    stars: oneOfType([string, number]),
+};
 
 export default BgIcons
